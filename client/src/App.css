@@ -1,0 +1,109 @@
+hr{
+    position: relative;
+    top: 20px;
+    border: none;   
+    height: 12px;
+    background: black;
+}
+.wait{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* Timeline styles for QR Scanner */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #dee2e6;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 50px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 11px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #dee2e6;
+}
+
+.timeline-content {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 3px solid #007bff;
+}
+
+.timeline-content h6 {
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+.timeline-content p {
+  margin-bottom: 5px;
+  color: #6c757d;
+}
+
+.timeline-content small {
+  color: #adb5bd;
+}
+
+/* Badge colors */
+.badge-secondary {
+  background-color: #6c757d;
+}
+
+.badge-info {
+  background-color: #17a2b8;
+}
+
+.badge-primary {
+  background-color: #007bff;
+}
+
+.badge-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.badge-success {
+  background-color: #28a745;
+}
+
+.badge-dark {
+  background-color: #343a40;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 15px;
+  }
+  
+  .timeline-item {
+    padding-left: 40px;
+  }
+  
+  .timeline-marker {
+    left: 6px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
